@@ -1,0 +1,104 @@
+/* background */
+.nav-bg{
+    background-color: #B1040E;
+}
+/* linkler */
+.nav-link{
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+}
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-link:hover{
+    color: #fff;
+  }
+.nav-link:hover::after{
+    width: 100%;
+    left: 0;
+}
+.after-item::after{
+    content: "|";
+    color: #fff;
+}
+/* mobil buton */
+.mobil-btn{
+    border: none;
+    background-color: transparent;
+    width: 120px;
+    height: 90px;
+    color: #fff;
+}
+/* dropdown hover */
+.dropdown-list {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B1040E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown-list:hover .dropdown-content {
+    display: block;
+  }
+  /* mobil yan menu */
+  .yanmenu .nav-item{
+    line-height: 4rem;
+  }
+  .icon-hvr{
+    margin-left: 3px;
+    color: #fff;
+    border: 2px solid #B1040E;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 1px;
+    font-size: 21px;
+    text-align: center;
+    transition: .5s;
+  }
+
+  .icon-hvr:hover{
+    background-color: #fff ;
+  }
+  .facebook:hover{
+    color:#3b5998 ;
+  }
+  .twitter:hover{
+    color: #55acee;
+  }
+  .instagram:hover{
+  color: #cd486b;
+  }
+  .youtube:hover{
+    color:#f00 ;
+  }
+  .telegram:hover{
+    color: #26A4E3;
+  }
